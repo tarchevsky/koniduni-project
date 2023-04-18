@@ -1,0 +1,22 @@
+.price {
+  &-number {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price {
+    .table {
+      max-width: 768px;
+
+      &__wrapper {
+        overflow-x: hidden;
+        white-space: normal;
+      }
+    }
+
+    &-number {
+      width: 35%;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 0;
+  padding-block: 40px;
+  margin-block-start: -$ind;
+
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    &__socials {
+      display: flex;
+      justify-content: flex-end;
+      gap: $gapmin;
+
+      a {
+        border: 0;
+      }
+
+      .vk {
+        width: 20px;
+        height: 30px;
+      }
+    }
+  }
+
+  .container {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    &-contacts {
+      align-items: flex-start;
+    }
+  }
+}

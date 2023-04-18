@@ -1,0 +1,13 @@
+.faq {
+  max-width: 768px;
+  margin: 0 auto;
+
+  &-heading {
+    text-align: center;
+  }
+
+  &-modal {
+    cursor: pointer;
+    border-bottom: $border;
+  }
+}

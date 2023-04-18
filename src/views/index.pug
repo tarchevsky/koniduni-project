@@ -1,0 +1,28 @@
+extends layouts/default
+
+block variables
+    - const title = "Koniduni - конные прогулки, верховая езда, контактный зоопарк"
+    - const description = "Сайт конной фермы. Занимаемся обучением верховой езде на лошадях и пони как в поле, так и в крытом манеже. Ходим в походы, привозим лошадей на мероприятия, катаем в санях и на хаски в зимний сезон. Есть контактный зоопарк"
+    - const keywords = "конная ферма, конюшня, верховая езда, езда в санях, выезд на мероприятия, езда на хаски, контактный зоопарк, лошади, пони"
+
+block header
+    include ../blocks/modules/header/header
+
+block content
+    include ../blocks/modules/main/main
+    include ../blocks/modules/about/about
+    include ../blocks/modules/demonstration/demonstration
+    include ../blocks/modules/faq/faq
+    include ../blocks/modules/price/price
+    include ../blocks/modules/photos/photos
+    include ../blocks/modules/map/map
+
+block footer
+    include ../blocks/modules/footer/footer
+
+block action-btns
+    include ../blocks/modules/action-btns/action-btns
+
+block scripts
+    script(src="js/vendor.js")
+    script(src="js/main.js")

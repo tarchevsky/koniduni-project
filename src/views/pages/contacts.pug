@@ -1,0 +1,20 @@
+extends ../layouts/default
+
+block variables
+    - const title = "Koniduni - контакты, как до нас добраться"
+    - const description = "Здесь вы сможете узнать, как с нами связаться и как до нас добраться"
+    - const keywords = "контакты, обратная связь, как добраться"
+
+block header
+    include ../../blocks/modules/header/header
+
+block content
+    include ../../blocks/modules/briefly-about-us/briefly-about-us
+    include ../../blocks/modules/map/map
+
+block footer
+    include ../../blocks/modules/footer/footer
+
+block scripts
+    script(src="js/vendor.js")
+    script(src="js/main.js")

@@ -1,19 +1,63 @@
+h1 Вариант 1. Чисто текст.
+
+p Абонемент. 1200р час в будни за час
+p И 1400 в выходные дни час
+p При покупке абонемента на 10 занятий
+
+p Час в будни 2500р(это может  быть занятие на платцу,манеже или прогулка по полям)
+p Час в выходные дни 3000р (манеж занятие или прогулка по лесам и полям)
+p Индивидуальная часовая прогулка для двоих в будний день 6800р
+p Индивидуальная часовая  прогулка для двоих в выходные и праздничные дни 7600р 
+p Катание на пони в будний день 1200р 30 минут
+p Катание на пони в выходной день 1400р 30 минут
+p Прогулка на лошади с ребёнком в двойном седле в будний день 3400р час - 1700р полчаса
+p В выходные дни  4000р час-2000р полчаса
+p Прогулка по ферме(фото ,знакомство ,кормление животных ) 1500р - 30минут стоимость указана в будний день с семьи до 6 человек. В выходные 2000р 
+p Двухчасовые выезды разной сложности в будний день 4800р
+p В выходные дни двухчасовой выезд поход 5600р
+p Фотосессия с Хасками знакомство ,прогулка 3000р 30 минут (на ферме 10 Хасок ,есть костюмы )
+p В выходные дни 4000р - 30 минут
+
+p Аренда лошади для фотосессии в будний день 3000р час(на выбор более 15 лошадей)
+p В выходные дни аренда лошади 4000р - час
+p Прогулка на двуколке в будний день 2500р -30 минут(двое взрослых помещается и ребенок)
+p 3500р в выходные дни -30 мин
+
+h1 Вариант 2. Таблицами
+
 section.price#price
     .table__wrapper
         table.table
             caption.table__caption
-                h2 Наши цены (при раннем бронировании за 2-3 дня)<br>будние / выходные, 1 час
+                h2 Наши цены (при раннем бронировании за 2-3 дня)<br><br><u><strong><u>Абонемент 10 занятий</u></strong>. Цена за час.</u>. <br><br>Будние / выходные + праздники
             thead
                 tr.table__row
                     th.table__header Тип занятия
                     th.table__header Цена
             tbody.table__body
                 tr.table__row
-                    td.table__data.price-name Занятие верхом
+                    td.table__data.price-name Занятие верхом (это может быть занятие на плацу, в манеже или прогулка по полям)
                     td.table__data.price-number 1200 / 1400 р
+
+section.price#price
+    .table__wrapper
+        table.table
+            caption.table__caption
+                h2 <u>Часовые занятия</u>. Будние / выходные + праздники
+            thead
                 tr.table__row
-                    td.table__data.price-name Парное занятие с ребёнком в двойном седле
-                    td.table__data.price-number 1700 / 1900 р
+                    th.table__header Тип занятия
+                    th.table__header Цена
+            tbody.table__body
+                tr.table__row
+                    td.table__data.price-name Занятие верхом (это может быть занятие на плацу,манеже или прогулка по полям)
+                    td.table__data.price-number 2500 / 3000 р
+                tr.table__row
+                    td.table__data.price-name Индивидуальная часовая прогулка для двоих
+                    td.table__data.price-number 6800 / 7600 р
+                tr.table__row
+                    td.table__data.price-name Парная прогулка с ребёнком в двойном седле
+                    td.table__data.price-number 3400 / 4000 р
                 tr.table__row
                     td.table__data.price-name Выезды от 2 и более часов
                     td.table__data.price-number 2400 / 2800 р
@@ -29,6 +73,179 @@ section.price#price
                 tr.table__row
                     td.table__data.price-name Катание в нартах на Хасках (45 мин)
                     td.table__data.price-number 3000 р
-            tfoot.table__footer
+
+section.price#price
+    .table__wrapper
+        table.table
+            caption.table__caption
+                h2 <u>30-минутные занятия</u>. Будние / выходные + праздники
+            thead
                 tr.table__row
-                    td.table__data(colspan="3") <strong>При спонтанной записи за день стоимость дороже на 200 рублей</strong>
+                    th.table__header Тип занятия
+                    th.table__header Цена
+            tbody.table__body
+                tr.table__row
+                    td.table__data.price-name Катание на пони
+                    td.table__data.price-number 1200 / 1400 р
+            tbody.table__body
+                tr.table__row
+                    td.table__data.price-name Парная прогулка с ребёнком в двойном седле
+                    td.table__data.price-number 1700 / 2000 р
+            tbody.table__body
+                tr.table__row
+                    td.table__data.price-name Прогулка на двуколке (помещается двое взрослых и ребенок)
+                    td.table__data.price-number 2500 / 3500 р
+            tbody.table__body
+                tr.table__row
+                    td.table__data.price-name Прогулка по ферме, фото,знакомство, кормление животных (до 6 человек)
+                    td.table__data.price-number 1500 / 2000 р
+
+section.price#price
+    .table__wrapper
+        table.table
+            caption.table__caption
+                h2 <u>2-часовые занятия</u>. Будние / выходные + праздники
+            thead
+                tr.table__row
+                    th.table__header Тип занятия
+                    th.table__header Цена
+            tbody.table__body
+                tr.table__row
+                    td.table__data.price-name Двухчасовые выезды разной сложности
+                    td.table__data.price-number 4800 / 5600 р
+
+section.price#price
+    .table__wrapper
+        table.table
+            caption.table__caption
+                h2 <u>Фотосессии</u>. Будние / выходные + праздники
+            thead
+                tr.table__row
+                    th.table__header Тип занятия
+                    th.table__header Цена
+            tbody.table__body
+                tr.table__row
+                    td.table__data.price-name Аренда лошади для фотосессии (не более 15 лошадей)
+                    td.table__data.price-number 3000 / 4000 р
+            tbody.table__body
+                tr.table__row
+                    td.table__data.price-name Фотосессия с Хаски, знакомство, прогулка (на ферме 10 Хасок, есть костюмы)
+                    td.table__data.price-number 3000 / 4000 р
+
+hr
+
+h3 <strong><u>Будьте внимательны! Цены могут меняться. Обязательно во время записи уточняйте цену</u></strong>
+
+h1 Вариант 3. Можно открыть что хочу по теме и найти цену.
+
+section.price
+    .tabs
+        .tabs-panel
+            .tabs-panel__item.tabs-panel__item--active Абонемент
+            .tabs-panel__item Часовые занятия
+            .tabs-panel__item 30-минутные занятия
+            .tabs-panel__item 2-часовые занятия
+            .tabs-panel__item Фотосессии
+        .tabs-content
+            .tabs-content__item.tabs-content__item--active
+                .table__wrapper
+                    table.table
+                        caption.table__caption
+                            h2 Наши цены (при раннем бронировании за 2-3 дня)<br><br><u><strong><u>Абонемент 10 занятий</u></strong>. Цена за час.</u>. <br><br>Будние / выходные + праздники
+                        thead
+                            tr.table__row
+                                th.table__header Тип занятия
+                                th.table__header Цена
+                        tbody.table__body
+                            tr.table__row
+                                td.table__data.price-name Занятие верхом (это может быть занятие на плацу, в манеже или прогулка по полям)
+                                td.table__data.price-number 1200 / 1400 р
+            .tabs-content__item
+                .table__wrapper
+                    table.table
+                        caption.table__caption
+                            h2 <u>Часовые занятия</u>. Будние / выходные + праздники
+                        thead
+                            tr.table__row
+                                th.table__header Тип занятия
+                                th.table__header Цена
+                        tbody.table__body
+                            tr.table__row
+                                td.table__data.price-name Занятие верхом (это может быть занятие на плацу,манеже или прогулка по полям)
+                                td.table__data.price-number 2500 / 3000 р
+                            tr.table__row
+                                td.table__data.price-name Индивидуальная часовая прогулка для двоих
+                                td.table__data.price-number 6800 / 7600 р
+                            tr.table__row
+                                td.table__data.price-name Парная прогулка с ребёнком в двойном седле
+                                td.table__data.price-number 3400 / 4000 р
+                            tr.table__row
+                                td.table__data.price-name Выезды от 2 и более часов
+                                td.table__data.price-number 2400 / 2800 р
+                            tr.table__row
+                                td.table__data.price-name Индивидуальное занятие
+                                td.table__data.price-number 1700 / 1900 р
+                            tr.table__row
+                                td.table__data.price-name Конкурное занятие
+                                td.table__data.price-number 1500 / 1700 р
+                            tr.table__row
+                                td.table__data.price-name Катание на санях (45 мин)
+                                td.table__data.price-number 5000 р
+                            tr.table__row
+                                td.table__data.price-name Катание в нартах на Хасках (45 мин)
+                                td.table__data.price-number 3000 р
+            .tabs-content__item
+                .table__wrapper
+                    table.table
+                        caption.table__caption
+                            h2 <u>30-минутные занятия</u>. Будние / выходные + праздники
+                        thead
+                            tr.table__row
+                                th.table__header Тип занятия
+                                th.table__header Цена
+                        tbody.table__body
+                            tr.table__row
+                                td.table__data.price-name Катание на пони
+                                td.table__data.price-number 1200 / 1400 р
+                        tbody.table__body
+                            tr.table__row
+                                td.table__data.price-name Парная прогулка с ребёнком в двойном седле
+                                td.table__data.price-number 1700 / 2000 р
+                        tbody.table__body
+                            tr.table__row
+                                td.table__data.price-name Прогулка на двуколке (помещается двое взрослых и ребенок)
+                                td.table__data.price-number 2500 / 3500 р
+                        tbody.table__body
+                            tr.table__row
+                                td.table__data.price-name Прогулка по ферме, фото,знакомство, кормление животных (до 6 человек)
+                                td.table__data.price-number 1500 / 2000 р
+            .tabs-content__item
+                .table__wrapper
+                    table.table
+                        caption.table__caption
+                            h2 <u>2-часовые занятия</u>. Будние / выходные + праздники
+                        thead
+                            tr.table__row
+                                th.table__header Тип занятия
+                                th.table__header Цена
+                        tbody.table__body
+                            tr.table__row
+                                td.table__data.price-name Двухчасовые выезды разной сложности
+                                td.table__data.price-number 4800 / 5600 р
+            .tabs-content__item
+                .table__wrapper
+                    table.table
+                        caption.table__caption
+                            h2 <u>Фотосессии</u>. Будние / выходные + праздники
+                        thead
+                            tr.table__row
+                                th.table__header Тип занятия
+                                th.table__header Цена
+                        tbody.table__body
+                            tr.table__row
+                                td.table__data.price-name Аренда лошади для фотосессии (не более 15 лошадей)
+                                td.table__data.price-number 3000 / 4000 р
+                        tbody.table__body
+                            tr.table__row
+                                td.table__data.price-name Фотосессия с Хаски, знакомство, прогулка (на ферме 10 Хасок, есть костюмы)
+                                td.table__data.price-number 3000 / 4000 р
